@@ -1,0 +1,46 @@
+{
+  "policy_name": "SAIC GitHub AI Agent Guidance Access Control Policy",
+  "version": "2026.1",
+  "effective_date": "2026-08-01",
+  "organization": "Science Applications International Corporation (SAIC)",
+  "guidance_rules": [
+    {
+      "rule_id": "RULE-001",
+      "name": "Public and Internal Repository Access",
+      "classification_scope": [
+        "UNCLASSIFIED",
+        "INTERNAL"
+      ],
+      "allowed_actions": [
+        "SEARCH",
+        "RETRIEVE",
+        "SUMMARIZE"
+      ],
+      "access_decision": "ALLOW",
+      "redaction_required": false
+    },
+    {
+      "rule_id": "RULE-002",
+      "name": "Controlled Unclassified Information (CUI) Restriction",
+      "classification_scope": [
+        "CUI",
+        "RESTRICTED",
+        "DOD_SPECIFIC"
+      ],
+      "trigger_keywords": [
+        "passphrase",
+        "master key",
+        "siprnet",
+        "ip range",
+        "root cmek",
+        "hsm-keyring"
+      ],
+      "allowed_actions": [
+        "AUDIT_LOG_ONLY"
+      ],
+      "access_decision": "DENY_WITH_REDACTION",
+      "redaction_required": true,
+      "replacement_mask": "[REDACTED PER SAIC SECURITY GUIDANCE - CUI POLICY RULE-002]"
+    }
+  ]
+}

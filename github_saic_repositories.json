@@ -1,0 +1,31 @@
+{
+  "organization": "SAIC-Enterprise-Org",
+  "total_repositories": 5,
+  "repositories": [
+    {
+      "name": "saic-cloud-toolkit",
+      "classification": "UNCLASSIFIED",
+      "visibility": "internal"
+    },
+    {
+      "name": "saic-devsecops-pipeline",
+      "classification": "UNCLASSIFIED",
+      "visibility": "internal"
+    },
+    {
+      "name": "saic-ai-framework",
+      "classification": "UNCLASSIFIED",
+      "visibility": "internal"
+    },
+    {
+      "name": "saic-gov-security-policy",
+      "classification": "CUI // DOD RESTRICTED",
+      "visibility": "restricted"
+    },
+    {
+      "name": "saic-access-control-guidance",
+      "classification": "UNCLASSIFIED",
+      "visibility": "internal"
+    }
+  ]
+}
